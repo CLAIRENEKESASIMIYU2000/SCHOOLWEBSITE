@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High School Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-image: url("https://cdn.wallpapersafari.com/18/85/udTL2N.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #f7f7f7;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      text-align: center;
+    
+      color: #fff;
+      padding: 10px;
+    }
+    .logo {
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
+      float: left;
+      margin-right: 20px;
+    }
+
+    h1 {
+      color: #004d99;
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-bottom: 20px;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    input,
+    textarea {
+      display: block;
+      margin-bottom: 10px;
+      padding: 8px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #004d99;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    a {
+      color: #004d99;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #004d99;
+      color: #fff;
+      padding: 10px;
+      margin-top: auto;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    footer .contact-info {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    footer .contact-phone {
+      color: #f2f2f2;
+    }
+
+    footer .contact-email {
+      color: #f2f2f2;
+      text-decoration: underline;
+    }
+    nav {
+      background-color: #004d99;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+    }
+
+    nav a:hover {
+      background-color: #fff;
+      color: #004d99;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+        <img class="logo" src="C:\Users\user\OneDrive\Pictures\school.jpeg" alt="School Logo">
+      <h1>ST JUSTINO HIGH SCHOOL</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Admissions</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>About Us</h2>
+      <p>
+        High School is dedicated to providing a comprehensive and enriching educational experience to students.
+        Our mission is to foster academic excellence, personal growth, and a strong sense of community among students.
+      </p>
+
+      <h2>Academics</h2>
+      <table>
+        <tr>
+          <th>Program</th>
+          <th>Duration</th>
+          <th>Apply</th>
+        </tr>
+        <tr>
+          <td>Science Stream</td>
+          <td>4 years</td>
+          <td><a href="#">Apply Now</a></td>
+        </tr>
+        <tr>
+          <td>Commerce Stream</td>
+          <td>3 years</td>
+          <td><a href="#">Apply Now</a></td>
+        </tr>
+        <tr>
+          <td>Arts Stream</td>
+          <td>3 years</td>
+          <td><a href="#">Apply Now</a></td>
+        </tr>
+      </table>
+
+      <h2>Admissions</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit Application</button>
+      </form>
+
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>Open House - September 10, 2023</li>
+        <li>Science Fair - October 15, 2023</li>
+        <li>Annual Sports Day - November 20, 2023</li>
+      </ul>
+
+      
+    </main>
+
+    <footer>
+      <p>&copy; 2023 High School. All rights reserved.</p>
+      <p class="contact-info">
+        Contact: <span class="contact-phone">0734568790</span> | Email: <a href="mailto:simiyucnekesa2000@gmail.com" class="contact-email">simiyucnekesa2000@gmail.com</a>
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>
